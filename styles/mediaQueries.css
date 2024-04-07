@@ -1,0 +1,132 @@
+* {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+@media screen and (min-width: 1081px) {
+}
+
+@media screen and (max-width: 1080px) {
+    #intro-text {
+        margin-inline: 5%;
+        padding: 4%;
+        border-radius: 1.5em;
+        background-color: rgba(49, 49, 49, 0.353) ;
+        align-self: center;
+        font-size: 2.25vw; 
+        font-weight: 900;
+        -webkit-text-stroke-width: 0.6vw; 
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.066);
+    }
+    .my-social>a>img {
+        width: 9.5vmin;
+        max-width: 9.5vmin;
+        transition: all 0.25s ease-in-out;
+    }
+    .my-social>a>img:hover {
+        width: 8.75vmin;
+        max-width: 8.75vmin;
+    }
+    .view-live, .source-code {
+        font-size: 1.5vmin;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+    body {
+        margin: 0;
+    }
+    #UserOptions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .UserOptionButtons {
+        width: 70%;
+        padding: 5%;
+        margin-top: 5%;
+        font-size: 65%;
+    }
+}
+
+
+
+@media screen and (max-width: 560px) {
+    #intro-image-div {
+        margin-left: 5%;
+        width: 90%;
+        max-width: 95vw;
+        display: flex;
+        align-items: center;
+    }
+    #intro-image {
+        padding: 0;
+        width: 50%;
+    } 
+    #intro-text {
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        box-shadow: 0 0 0 rgba(164, 164, 164, 0.332);
+        backdrop-filter: blur(0);
+    }
+    #UserOptions {
+        width: 0px;
+        visibility: hidden;
+        height: 0px;
+    }
+    #UserOptions-mobile {
+        width: inherit;
+        height: inherit;
+        visibility: visible;
+        align-items: center;
+    }
+    .UserOptionButtons {
+        padding: 8%;
+        font-size: 80%;
+        max-width: 50%;
+    }
+    .UserOptionButtons:hover {
+        font-size: 85%;
+    }
+    .UserOptionButtons:active {
+        font-size: 85%;
+        box-shadow: 0 0 1em rgba(255, 255, 255, 0.5);
+    }
+    .section-title {
+        font-size: 6vw;
+        margin: 0.7em;
+        margin-top: 6.8%;
+        margin-bottom: 3.5%;
+    }
+    #intro-image-and-text {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #intro-image {
+        max-width: 70%;
+    } 
+    #intro-text {
+        margin-top: 5%;
+        font-size: 5.75vw; 
+    }
+    .break {
+        animation: break 30s linear infinite;
+    }
+    .break>img {
+        content: url(../assets/images/strip-m.png);
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    body {
+        margin: 0;
+    }
+}
